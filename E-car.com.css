@@ -1,0 +1,226 @@
+body{
+    background-color: black;
+    background-size: 100%;
+    color: white;
+}
+span{
+    text-align: center;
+    text-align: bottom;
+    position: absolute;
+    border: 5px double white;
+    width: 100px;
+    height: 100px;
+    animation: example 5s ease-in-out infinite;
+    align-items: right;
+}
+.animdiv{   
+    width: 100px;
+    height: 100px;
+}
+.span1{
+    left: 0;
+    align-self: left;
+    animation: N1 5s ease-in-out infinite;
+    box-shadow: 2px 6px 2px white;
+    
+}
+.span2{
+    left: 100px;
+    align-self: left;
+    animation: N2 15s ease-in-out infinite;
+    box-shadow: 2px 6px 2px white;
+}
+.span3{
+    left: 200px;
+    align-self: right;
+    animation: N3 10s ease-in-out infinite;
+    box-shadow: 2px 6px 2px white;
+}
+.span4{
+    left: 300px;
+    align-self: right;
+    animation: N4 20s ease-in-out infinite;
+    box-shadow: 2px 6px 2px white;
+}
+img{
+    width: 300px;
+    height: auto;
+    flex: auto;
+}
+.back{
+    width: 100px;
+    height: 50px;
+    border: 2px double whitesmoke;
+    border-radius: 100%;
+}
+fieldset{
+    width: 100px;
+    border: 2px solid whitesmoke;
+    align-self: center;
+    top: 100px;
+}
+fieldset:hover{
+    background-color: gray;
+}
+fieldset:active{
+    color:black;
+}
+.flex{
+    float: right;
+    float: inline-start;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+#fixing{
+    top: 10px;
+    right: 20px;
+    position: fixed;
+}
+p{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    color: gray;
+    font-size: 10px;
+}
+#Something{
+    width: 60px;
+    height: 45px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.p{
+    position: fixed;
+    bottom: 100px;
+    right: 60px;
+}
+.comment{
+    width: 500px;
+    height: 50px;
+}
+.p1{
+    color:white;
+    background-color:teal;
+    top: 100px ;
+    position: unset;
+}
+.screenshot{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+.div{
+    position: unset;
+    top: 100px;
+    left: 100px;
+}
+@keyframes N1{
+    0%{
+        background: white;
+        
+    }
+    50%{
+        transform: rotate('180deg');
+        transform: translate(1000px);
+    }
+    100%{
+        transform: rotate('360deg');
+        transform: translateX(-400px);        
+        border: 2px solid white;
+        
+    }
+}
+@keyframes N2{
+    0%{
+        background: white;
+    }
+    50%{
+        transform: rotate('180deg');
+        transform: translate(1000px);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform: translateX(-400px);
+        border: 2px solid white;
+    }
+}
+@keyframes N3{
+    0%{  
+        background: white;     
+    }
+    50%{
+        transform: rotate('180deg');
+        transform: translate(1000px); 
+    }
+    100%{
+        transform: rotate('360deg');
+        transform: translateX(-400px);
+        border: 2px solid black;
+    }
+}
+@keyframes N4{
+    0%{
+        background: white;
+        
+    }
+    50%{
+        transform: rotate('180deg');
+        transform: translate(1000px);
+    }
+    100%{
+        transform: rotate('360deg');
+        transform: translateX(-400px);
+        border: 2px solid black;
+    }
+}
+@media screen and (max-width: 320px){
+    body{
+        color: white;
+        background: linear-gradient(black, darkblue);
+    }
+    span{
+        width: 25px;
+        height: 25px;
+    } 
+    .animdiv{
+        width: 25px;
+        height: 25px;
+    }
+    input{
+        color: white;
+    }
+    #Something{
+        display: none;
+    }
+    #fixing{
+        display: none;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 768px){
+    body{
+        color: black;
+        background: white;
+    }
+    span{
+        width: 50px;
+        height: 50px;
+    } 
+    .animdiv{
+        width: 50px;
+        height: 50px;
+    }
+    input{
+        color: green;
+    }
+    #Something{
+        display: none;
+    }
+    #fixing{
+        display: none;
+    }
+}
